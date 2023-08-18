@@ -5,6 +5,9 @@
 ## 목표 🌱
 배포 자동화, 무중단 배포 프로젝트 경험을 위한 RESTful API 기반 Web Application
 
+## 참고
+책과 버전이 상이함으로 코드가 많이 다를 수 있습니다.
+
 ## 개발환경
 - SpringBoot 2.7.14
 - github
