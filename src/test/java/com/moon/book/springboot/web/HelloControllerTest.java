@@ -8,10 +8,14 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.hamcrest.Matchers.is;
 
 @ExtendWith(SpringExtension.class)
-@WebMvcTest(controllers = HelloController.class)
+@WebMvcTest
 public class HelloControllerTest {
 
     private MockMvc mvc;
@@ -28,6 +32,7 @@ public class HelloControllerTest {
                 .andExpect(MockMvcResultMatchers.content().string(hello));
     }
 
+    @Test
     public void helloDTO가_리턴된다() throws Exception {
         String name = "hello";
         int amount  = 1000;
