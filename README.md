@@ -18,3 +18,4 @@
 
 ## 공부한 내용
 - 단위테스트 => https://crescent117.tistory.com/10
+- JPA => https://crescent117.tistory.com/14
